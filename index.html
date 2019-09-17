@@ -49,10 +49,10 @@
                     </div>
                     <div class="escolha">
                         <p>Você quer esse lead em sua base?</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal2"
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#Modal2"
                             id="aceita">aceitar</button>
-                        <button id="recusa">recusar</button>
-                        <button id="lead-quente">lead quente</button>
+                        <button type="button" class="btn btn-primary" id="recusa" data-dismiss="modal" data-toggle="modal">recusar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#Modal2" id="lead-quente">lead quente</button>
 
                     </div>
                 </div>
@@ -74,7 +74,11 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    
+                    <select name="contato" id="meioContato">
+                        <option value="email">Email</option>
+                        <option value="telefone">Telefone</option>
+                        <option value="semContato">Não houve contato</option>
+                    </select>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -133,6 +137,9 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
     <script src="js/buscaLead.js"></script>
+    <script src="js/criaJornada.js"></script>
+    <script src="js/criaCheckin.js"></script>
+    <script src="js/criaCheckout.js"></script>
     <script src="js/likeOrRefuse.js"></script>
 </body>
 

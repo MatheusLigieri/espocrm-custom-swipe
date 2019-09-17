@@ -7,13 +7,14 @@ var emailId = document.querySelector('#email');
 var ids = new Array();
 var idLead;
 botao.addEventListener('click', function () {
-    leadOfertaMais()
+    checkinOferta();
+    setTimeout(function () {
+        leadOfertaMais()
+    }, 2000);
+    setTimeout(function () {
+        dadosLeadOfertaMais()
+    }, 2000);
 })
-
-function checkinNaOferta() {
-    
-}
-
 function leadOfertaMais() {
     console.log('em três segundos começa o primeiro request')
     var xhr = new XMLHttpRequest();
@@ -38,9 +39,6 @@ function leadOfertaMais() {
         }
     })
     xhr.send()
-    setTimeout(function () {
-        dadosLeadOfertaMais()
-    }, 1000)
 }
 function dadosLeadOfertaMais() {
     var xhr2 = new XMLHttpRequest();

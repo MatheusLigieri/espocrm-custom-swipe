@@ -1,7 +1,8 @@
 var aceita = document.querySelector('#aceita');
 var recusa = document.querySelector('#recusa');
 var leadQuente = document.querySelector('#lead-quente');
-var userId;
+var userId = localStorage.getItem('userId');
+var userName = localStorage.getItem('userName');
 var aprovacao = []
 var reprovacao = []
 console.log('rola')
