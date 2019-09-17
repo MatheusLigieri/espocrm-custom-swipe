@@ -1,0 +1,14 @@
+{
+    "status": "Held",
+    "dateStart": "2019-09-16 22:15",
+    "duration": 3600,
+    "primeiraVisita": false,
+    "segundaVisita": false,
+    "tipodevisita": "Checkout Corretor (Oferta Ativa)",
+    "corretorAtivoRoleta": false,
+    "assignedUserId": "5c82dbf30a82d81e2",
+    "assignedUserName": "Matheus Enube",
+    "dateEnd": "2019-09-16 23:15",
+    "teamsIds": [],
+    "teamsNames": {}
+}

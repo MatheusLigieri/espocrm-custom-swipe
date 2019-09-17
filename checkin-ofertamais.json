@@ -1,0 +1,35 @@
+{
+    "id": "5d800afc7dc741806",
+    "name": "Checkin Corretor (Oferta Ativa)",
+    "deleted": false,
+    "status": "Held",
+    "dateStart": "2019-09-16 22:15",
+    "dateEnd": "2019-09-16 23:15",
+    "duration": 3600,
+    "reminders": [],
+    "createdAt": "2019-09-16 22:21:48",
+    "modifiedAt": "2019-09-16 22:21:48",
+    "primeiraVisita": false,
+    "segundaVisita": false,
+    "tipodevisita": "Checkin Corretor (Oferta Ativa)",
+    "corretorAtivoRoleta": false,
+    "participarOfertaAtiva": false,
+    "usersIds": [
+        "5c82dbf30a82d81e2"
+    ],
+    "createdById": "5c82dbf30a82d81e2",
+    "assignedUserId": "5c82dbf30a82d81e2",
+    "assignedUserName": "Matheus Enube",
+    "teamsIds": [
+        "5d49d4cac20bf4598"
+    ],
+    "teamsNames": {},
+    "empreendimentosIds": [
+        "5b55e7b4d7247984a"
+    ],
+    "empreendimentosNames": {
+        "5b55e7b4d7247984a": "O Parque"
+    }
+}
+
+https://mais.anupam.com.br/api/v1/Meeting

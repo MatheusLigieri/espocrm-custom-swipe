@@ -10,10 +10,14 @@ botao.addEventListener('click', function () {
     leadOfertaMais()
 })
 
+function checkinNaOferta() {
+    
+}
+
 function leadOfertaMais() {
     console.log('em três segundos começa o primeiro request')
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://mais.anupam.com.br/api/v1/OfertaMais?select=salutationName%2CfirstName%2ClastName%2Cname%2CrealEstatePropertyId%2CrealEstatePropertyName%2CassignedUserId%2CassignedUserName%2CleadScoring%2CcreatedAt&maxSize=20&offset=0&orderBy=createdAt&order=desc');
+    xhr.open('GET', 'https://mais.anupam.com.br/api/v1/OfertaMais?select=salutationName%2CfirstName%2ClastName%2Cname%2CphoneNumber%2CphoneNumberData%2CemailAddressIsOptedOut%2CemailAddress%2CemailAddressData%2CrealEstatePropertyId%2CrealEstatePropertyName%2CassignedUserId%2CassignedUserName%2CleadScoring%2CcreatedAt&maxSize=20&offset=0&orderBy=createdAt&order=desc&where%5B0%5D%5Btype%5D=bool&where%5B0%5D%5Bvalue%5D%5B%5D=onlyMy');
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Authorizathion', 'Basic ' + localStorage.getItem('espo-user-auth'))
     xhr.addEventListener('readystatechange', function () {
@@ -51,7 +55,7 @@ function dadosLeadOfertaMais() {
                 console.log(JSONdata.name);
                 idLead = JSONdata.id;
                 nomeId.textContent = JSONdata.name;
-                emailId.textContent = JSONdata.emailAddress.toLowerCase();
+                emailId.textContent = JSONdata.emailAddress
                 telefoneId.setAttribute('href', 'tel:5511' + JSONdata.phoneNumber)
                 emailId.setAttribute('href', 'mailto:' + JSONdata.emailAddress)
                 telefoneId.textContent = JSONdata.phoneNumber;
